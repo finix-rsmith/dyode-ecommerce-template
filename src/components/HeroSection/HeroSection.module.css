@@ -1,3 +1,22 @@
 .HeroSection {
 	height: 638px;
 }
+
+.Slide {
+
+}
+
+.HeroSection img {
+	width: 100%;
+}
+
+.HeroSection a {
+	background: #ccc;
+	color: #fff;
+	margin: 20px 10px;
+	padding: 10px 20px;
+}
+
+.HeroSection a:hover {
+	background: #fa3;
+}
