@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import styles from './CarouselSlider.module.css'
 import CarouselSlide from '../CarouselSlide/CarouselSlide.js'
-import CarouselNav from '../CarouselNav/CarouselNav.js'
 
 const CarouselSlider = (props) => {
   const [SlideCounter, setSlideCounter] = useState(0)
