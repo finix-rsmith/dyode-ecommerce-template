@@ -1,0 +1,30 @@
+/* Standard settings */
+
+.BrandLogo {
+	display: inline-block;
+}
+
+.BrandLogo a {
+	display: inherit;	
+}
+
+/* Mobile responsive settings */
+@media only screen and (max-width: 599px) {
+
+	.BrandLogo {
+		margin-left: 48px;		
+	}
+	.Logo {
+		height: 46px;
+	}
+
+}
+
+/* Desktop responsive settings */
+@media only screen and (min-width: 600px) {
+
+	.Logo {
+		height: 77px;
+	}
+
+}
