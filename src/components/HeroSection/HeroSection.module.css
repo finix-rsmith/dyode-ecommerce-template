@@ -1,22 +1,97 @@
+/* Standard settings */
+
 .HeroSection {
-	height: 638px;
+	overflow: hidden;
 }
 
 .Slide {
-
+	float: left;
+	position: relative;
 }
 
-.HeroSection img {
-	width: 100%;
+.TextBox {
+	color: #ccc;
+	text-align: left;
+	position: absolute;
 }
 
-.HeroSection a {
-	background: #ccc;
+.TextBox h1 {
+	margin: 0;
+}
+
+.Button {
+	background: #000;
 	color: #fff;
-	margin: 20px 10px;
-	padding: 10px 20px;
+	padding: 10px;
+	font-size: 14px;
+	text-transform: uppercase;
+	display: inline-block;
+	cursor: pointer;
 }
 
-.HeroSection a:hover {
-	background: #fa3;
+.Button:hover {
+	background: #10504f;
+}
+
+.SlideNav {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	display: inline;
+	position: absolute;
+	bottom: 20px;
+	left: 0;
+}
+
+.SlideNav li {
+	display: inline-block;
+	list-style: none;
+}
+
+.SlideNav button {
+	background: rgba(255,255,255,0.5);
+	color: transparent;
+	width: 20px;
+	height: 20px;
+	margin: 5px;
+	border: 0;
+	border-radius: 50%;
+}
+
+.SlideNav button:active, .SlideNav button:focus {
+	background: #fff;
+}
+
+/* Mobile responsive settings */
+@media only screen and (max-width: 599px) {
+
+	.HeroSection img {
+		width: 100%;
+	}
+
+	.TextBox {
+		background: #efefef;
+		padding: 20px;
+		text-align: center;
+		position: initial;
+	}
+
+	.TextBox h1, .TextBox h3 {
+		color: #10504f;
+	}
+
+	.SlideNav {
+		bottom: 188px;
+	}
+
+}
+
+/* Desktop responsive settings */
+@media only screen and (min-width: 600px) {
+
+	.HeroSection img {
+		min-width: 100%;
+		min-height: 100%;
+	}
+
 }

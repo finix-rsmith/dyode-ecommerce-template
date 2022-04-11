@@ -1,31 +1,41 @@
 import React, { useState } from 'react'
 import styles from './HeroSection.module.css'
+import brandTheme from '../../BrandThemes.css'
+import Slider from 'react-slick'
 
 const HeroSection = (props) => {
-  const [SlideCounter, setSlideCounter] = useState(0)
-  const finalSlide = props.Slides.length
 
-  const prevSlide = () => {
-    SlideCounter > 0 ? setSlideCounter(SlideCounter - 1) : setSlideCounter(finalSlide)
-    console.log(SlideCounter)
+  const textBoxSettings = {}
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    autoplay: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    dotsClass: styles.SlideNav
   }
 
-  const nextSlide = () => {
-    SlideCounter < finalSlide ? setSlideCounter(SlideCounter + 1) : setSlideCounter(0)
-    console.log(SlideCounter)
-  }
+  const heroSlides = props.Slides.map( (data, index) => {
+    let textBoxSettings = data.textBox
+    return (
+      <div className={styles.Slide} key={index}>
+        <img src={data.image} />
+        <div className={styles.TextBox} style={textBoxSettings}>
+          <h1 className={data.theme}>{data.title}</h1>
+          <h3 className={data.theme}>{data.subtitle}</h3>
+          <a className={styles.Button}>Shop now</a>
+        </div>
+      </div>
+    )
+  })
 
   return (
     <div className={styles.HeroSection}>
-      {Object.keys(props.Slides).map(slide => (
-        <div className={styles.Slide} key={slide}>
-          <img src={props.Slides[slide].image} />
-          <h1>{props.Slides[slide].title}</h1>
-          <p>{props.Slides[slide].subtitle}</p>
-          <a onClick={prevSlide}>Previous</a>
-          <a onClick={nextSlide}>Next</a>
-        </div>
-      ))}
+      <Slider {...settings}>
+        {heroSlides}
+      </Slider>
     </div>
   )
 }
