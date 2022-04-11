@@ -1,15 +1,10 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styles from './PromoBar.module.css';
+import React from 'react'
+import styles from './PromoBar.module.css'
 
-const PromoBar = () => (
+const PromoBar = (props) => (
   <div className={styles.PromoBar}>
-    PromoBar Component
+    <p>{props.Message}</p>
   </div>
-);
+)
 
-PromoBar.propTypes = {};
-
-PromoBar.defaultProps = {};
-
-export default PromoBar;
+export default PromoBar
