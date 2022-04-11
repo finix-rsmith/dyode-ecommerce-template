@@ -1,0 +1,15 @@
+.ProductSlider {
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+.ProductSlider .BoundaryBox {
+	max-width: 1200px;
+	height: 632px;
+	margin: 0 auto;
+}
+
+.ProductSlider h1 {
+	color: #10504f;
+}

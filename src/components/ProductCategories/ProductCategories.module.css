@@ -1,0 +1,66 @@
+/* Standard settings */
+
+.ProductCategories {
+	width: 100%;
+}
+
+.ProductCategories .BoundaryBox {
+	max-width: 1200px;
+	padding: 15px;
+	margin: 0 auto;
+}
+
+.CategoryCard {
+	margin: 5px;
+	box-sizing: border-box;
+	display: inline-block;
+	position: relative;
+}
+
+.CategoryCard img {
+	width: 100%;
+}
+
+.CategoryCard .TextBox {
+	background: #10504f;
+	color: #fff;
+	width: 100%;
+	position: absolute;
+	bottom: 0px;
+}
+
+.CategoryCard .TextBox h2 {
+	margin: 20px 0;
+}
+
+/* Mobile responsive settings */
+@media only screen and (max-width: 599px) {
+
+	.CategoryCard {
+		width: calc(50% - 10px);
+	}
+
+	.CategoryCard:last-child {
+		width: calc(100% - 10px);
+		height: 0;
+		padding: 0 0 50% 0;
+		overflow: hidden;
+		position: relative;
+	}
+
+	.CategoryCard:last-child img {
+		position: absolute;
+		top: -100%;
+		left: 0;
+	}
+
+}
+
+/* Desktop responsive settings */
+@media only screen and (min-width: 600px) {
+
+	.CategoryCard {
+		width: calc(33.3% - 10px);
+	}
+
+}
