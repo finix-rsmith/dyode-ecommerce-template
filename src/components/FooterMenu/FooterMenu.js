@@ -31,26 +31,6 @@ const FooterMenu = (props) => {
     setSecondaryMenu(!SecondaryMenu)
   }
 
-  const customerServiceNav = props.Primary.map( (data, index) => (
-    <li key={index}>
-      <a href={data.link}>{data.title}</a>
-    </li>
-  ))
-
-  const companyNav = props.Secondary.map( (data, index) => (
-    <li key={index}>
-      <a href={data.link}>{data.title}</a>
-    </li>
-  ))
-
-  const socialNav = props.Social.map( (data, index) => (
-    <li key={index}>
-      <a href={data.link}>
-        <img src={data.icon} alt={data.title}/>
-      </a>
-    </li>
-  ))
-
   useEffect(() => {
     let device = deviceCheck()
     if (device == 'mobile') {
