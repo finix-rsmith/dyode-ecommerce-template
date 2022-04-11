@@ -1,0 +1,95 @@
+/* Standard settings */
+
+.FooterMenu {
+	background: #000;
+	color: #fff;
+	width: 100%;
+	float: left;
+	box-sizing: border-box;
+}
+
+.FooterMenu section {}
+
+.FooterMenu h4 {
+  font-family: 'Pacifico', 'Lato', 'Open Sans', sans-serif;
+  text-align: left;
+}
+
+.FooterMenu ul {
+	padding: 0;
+}
+
+.FooterMenu li {
+	margin: 20px 0;
+	text-align: left;
+	list-style: none;
+}
+
+.FooterMenu li a {
+	color: #fff;
+	font-size: 18px;
+	text-decoration: none;
+}
+
+.FooterMenu img {
+	height: 32px;
+	width: auto;
+}
+
+.FooterMenu .SocialNav li {
+	display: inline-block;
+}
+
+/* Mobile responsive settings */
+@media only screen and (max-width: 599px) {
+
+	.FooterMenu {
+		padding: 20px;
+	}
+
+	.FooterMenu .ToggleButton {
+		cursor: pointer;
+		float: right;
+	}
+
+	.CustomerServiceNav, .CompanyNav, .SocialNav {
+		width: 100%;
+		margin: 0;
+		text-align: left;
+	}
+
+	.FooterMenu .SocialNav li {
+		margin: 0 40px 0 0;
+	}
+
+}
+
+/* Desktop responsive settings */
+@media only screen and (min-width: 600px) {
+
+	.FooterMenu {
+		padding: 30px 48px;
+	}
+
+	.FooterMenu .ToggleButton {
+		display: none;
+	}
+
+	.CompanyNav {
+		margin: 0 0 0 92px;
+	}
+
+	.FooterMenu .CustomerServiceNav,
+	.FooterMenu .CompanyNav {
+		float: left;
+	}
+
+	.FooterMenu .SocialNav {
+		float: right;
+	}
+
+	.FooterMenu .SocialNav li {
+		margin: 0 20px;
+	}
+
+}

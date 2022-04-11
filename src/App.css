@@ -1,48 +1,67 @@
+@import url('http://fonts.googleapis.com/css?family=Pacifico:400,700&display=swap');
+@import url('http://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+
 .App {
+  font-family: 'Lato', 'Open Sans', sans-serif;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1, h2 {
+  font-family: 'Pacifico', 'Lato', 'Open Sans', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h4 {
+  font-size: 22px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-.menu {
+.Menu {
   width: 100%;
   position: fixed;
   top: 0;
   z-index: 999;
 }
-.body {
-  margin-top: 196px;
+
+
+/* Mobile responsive settings */
+@media only screen and (max-width: 599px) {
+
+  h1 {
+    font-size: 26px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .Body {
+    margin-top: 127px;
+  }
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Desktop responsive settings */
+@media only screen and (min-width: 600px) {
+
+  h1 {
+    font-size: 60px;
   }
-  to {
-    transform: rotate(360deg);
+
+  h2 {
+    font-size: 40px;
   }
+
+  h3 {
+    font-size: 26px;
+    font-weight: 400;
+  }
+
+  .Body {
+    margin-top: 196px;
+  }
+
 }

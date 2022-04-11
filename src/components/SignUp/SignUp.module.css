@@ -1,0 +1,80 @@
+/* Standard settings */
+
+.SignUp {
+	background: #10504F;
+	color: #fff;
+	width: 100%;
+	padding: 30px 48px;
+	float: left;
+	box-sizing: border-box;
+}
+
+.SignUp img {
+	display: inline-block;
+}
+
+.SignUp .Block {
+	padding: 20px;
+	float: left;
+	text-align: left;
+}
+
+.SignUp .Block h4 {
+	margin: 0;
+	font-weight: 400;
+}
+
+.SignUp input {
+	width: calc(100% - 133px);
+	height: 34px;
+	padding: 10px;
+	border: none;
+	float: left;
+}
+
+.SignUp input:focus {
+	outline: none;
+}
+
+.SignUp button {
+	background: transparent;
+	color: #fff;
+	width: 100px;
+	height: 54px;
+	margin: 0 0 0 13px;
+	padding: 10px;
+	border: 2px solid #fff;
+	font-family: 'Lato', 'Open Sans', sans-serif;
+	font-size: 14px;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.SignUp button:hover {
+	background: #fff;
+	color: #10504F;
+}
+
+/* Mobile responsive settings */
+@media only screen and (max-width: 599px) {
+
+	.SignUp {
+		padding: 20px;
+	}
+
+	.SignUp .Block {
+		width: 100%;
+		padding: 20px 0;
+		text-align: center;
+	}
+
+}
+
+/* Desktop responsive settings */
+@media only screen and (min-width: 600px) {
+
+	.SignUp .Block {
+		width: calc(50% - 40px);
+	}
+
+}

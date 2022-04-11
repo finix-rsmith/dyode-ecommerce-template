@@ -1,28 +1,32 @@
-import logo from './logo.svg'
 import './App.css'
+import 'slick-carousel/slick/slick.css'
+import 'slick-carousel/slick/slick-theme.css'
 import PromoBar from './components/PromoBar/PromoBar.js'
 import NavBar from './components/NavBar/NavBar.js'
+import CarouselSlider from './components/CarouselSlider/CarouselSlider.js'
 import HeroSection from './components/HeroSection/HeroSection.js'
+import ProductCategories from './components/ProductCategories/ProductCategories.js'
+import ProductSlider from './components/ProductSlider/ProductSlider.js'
+import SignUp from './components/SignUp/SignUp.js'
+import FooterMenu from './components/FooterMenu/FooterMenu.js'
+import { brandLogo, promoMessage, heroSlides, heroStatic, storeCategories, storeProducts, signUpContent } from './SiteContent.js'
+import { customerServiceNav, companyNav, socialNav } from './SiteMap.js'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <div className='menu'>
-        <PromoBar/>
-        <NavBar/>
+    <div className='App'>
+      <div className='Menu'>
+        <PromoBar Message={promoMessage} />
+        <NavBar Logo={brandLogo} />
       </div>
-      <div className='body'>
-        <HeroSection/>
+      <div className='Body'>
+        <CarouselSlider Template='Hero' Nav='Dots' Slides={heroSlides} />
+        <ProductCategories Categories={storeCategories} />
+        <CarouselSlider Template='Product' Nav='Arrows' Slides={storeProducts} />
+        <HeroSection Slides={heroStatic} />
+        <SignUp Content={signUpContent}/>
+        <FooterMenu Primary={customerServiceNav} Secondary={companyNav} Social={socialNav} />
       </div>
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-          Learn React
-        </a>
-      </header>
     </div>
   )
 }
