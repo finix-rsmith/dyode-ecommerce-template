@@ -1,5 +1,128 @@
+/* Standard settings */
 .NavBar {
 	background: #10504f;
+	color: #fff;
 	width: 100%;
-	height: 138px;
+	text-align: left;
+	position: relative;
+	box-sizing: border-box;
+}
+
+.NavMenu {}
+
+.NavMenu ul {
+	margin: 0;
+}
+
+.NavMenu li {
+	list-style: none;
+}
+
+.NavMenu li a {
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.NavUtility {
+	text-align: right;
+	display: inline;
+	position: absolute;
+}
+
+.NavUtility ul {
+	margin: 0;
+	padding: 0;
+}
+
+.NavUtility li {
+	margin: 0 15px;
+	list-style: none;
+	display: inline;
+}
+
+.NavUtility a {
+	color: #fff;
+	text-decoration: none;
+	display: block;
+}
+
+.NavUtility img {
+	height: 20px;
+	width: auto;
+	vertical-align: middle;
+}
+
+/* Mobile responsive settings */
+@media only screen and (max-width: 599px) {
+
+	.NavBar {
+		padding: 10px 20px;
+	}
+
+	.NavMenu img {
+		height: 28px;
+		vertical-align: middle;
+	}
+
+	.NavMenu ul {
+		background: #10504f;
+		width: 100%;
+		padding: 10px 0;
+		margin: 0;
+		text-align: left;
+		position: fixed;
+		left: 0px;
+		display: none;
+	}
+
+	.NavMenu:hover ul {
+		display: block;
+	}
+
+	.NavMenu li {
+		width: 100%;
+		padding: 10px 20px;
+	}
+
+	.NavUtility {
+		top: calc(50% - 12px);
+		right: 20px;
+	}
+
+}
+
+/* Desktop responsive settings */
+@media only screen and (min-width: 600px) {
+
+	.NavBar {
+		padding: 30px 48px;
+	}
+
+	.NavMenu {
+		width: 100%;
+		position: absolute;
+		bottom: 42px;
+		left: 0;
+		cursor: pointer;
+	}
+
+	.NavMenu ul {
+		text-align: center;
+	}
+
+	.NavMenu li {
+		margin: 0 30px;
+		display: inline-block;
+	}
+
+	.NavMenu img {
+		display: none;
+	}
+
+	.NavUtility {
+		bottom: 42px;
+		right: 48px;
+	}
+
 }
