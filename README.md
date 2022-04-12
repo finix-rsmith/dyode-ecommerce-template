@@ -6,11 +6,11 @@ Dev challenge
 
 View live demo on Heroku @ https://dyode-ecommerce-template.herokuapp.com
 
-To use the app locally, navigate to the project directory and run:
-### `npm install` or `yarn install`
-then
-### `npm start` or `yarn start`
-and open localhost:3000 in a browser.
+To use the app locally:
+- Navigate to project directory
+- Run `npm install` or `yarn install`
+- Run `npm start` or `yarn start`
+- Open localhost:3000 in a browser
 
 ## Technologies
 
