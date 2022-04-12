@@ -4,13 +4,13 @@ Dev Challenge II: Frontend Challenge
 
 ## Usage
 
-View live demo on [Heroku](https://dyode-ecommerce-template.herokuapp.com)
+View live demo on [Heroku](https://dyode-ecommerce-template.herokuapp.com).
 
 To use the app locally:
-1. Navigate to project directory
-2. Run `npm install` or `yarn install` to setup dependencies
-3. Run `npm start` or `yarn start` to launch server
-4. Open localhost:3000 in a browser
+1. Navigate to project directory.
+2. Run `npm install` or `yarn install` to setup dependencies.
+3. Run `npm start` or `yarn start` to launch server.
+4. Open localhost:3000 in a browser.
 
 ## Technologies
 
@@ -21,5 +21,5 @@ To use the app locally:
 ## Author
 
 **Richard Smith**
-rsmith@finixcreative.com
-617-417-2179
+- rsmith@finixcreative.com
+- 617-417-2179
