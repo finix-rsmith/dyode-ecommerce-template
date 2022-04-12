@@ -12,23 +12,21 @@ import FooterMenu from './components/FooterMenu/FooterMenu.js'
 import { brandLogo, promoMessage, heroSlides, heroStatic, storeCategories, storeProducts, signUpContent } from './assets/SiteContent.js'
 import { customerServiceNav, companyNav, socialNav } from './assets/SiteMap.js'
 
-const App = () => {
-  return (
-    <div className='App'>
-      <div className='Menu'>
-        <PromoBar Message={promoMessage} />
-        <NavBar Logo={brandLogo} />
-      </div>
-      <div className='Body'>
-        <CarouselSlider Template='Hero' Nav='Dots' Slides={heroSlides} />
-        <ProductCategories Categories={storeCategories} />
-        <CarouselSlider Template='Product' Nav='Arrows' Slides={storeProducts} />
-        <HeroSection Slides={heroStatic} />
-        <SignUp Content={signUpContent}/>
-        <FooterMenu Primary={customerServiceNav} Secondary={companyNav} Social={socialNav} />
-      </div>
+const App = () => (
+  <div className='App'>
+    <div className='Menu'>
+      <PromoBar Message={promoMessage} />
+      <NavBar Logo={brandLogo} />
     </div>
-  )
-}
+    <div className='Body'>
+      <CarouselSlider Template='Hero' Nav='Dots' Slides={heroSlides} />
+      <ProductCategories Categories={storeCategories} />
+      <CarouselSlider Template='Product' Nav='Arrows' Slides={storeProducts} />
+      <HeroSection Slides={heroStatic} />
+      <SignUp Content={signUpContent}/>
+      <FooterMenu Primary={customerServiceNav} Secondary={companyNav} Social={socialNav} />
+    </div>
+  </div>
+)
 
 export default App
