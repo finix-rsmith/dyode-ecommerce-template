@@ -60,6 +60,11 @@
 		padding: 10px 20px;
 	}
 
+	.NavMenu {
+		position: absolute;
+		top: calc(50% - 14px);
+	}
+
 	.NavMenu img {
 		height: 28px;
 		vertical-align: middle;
