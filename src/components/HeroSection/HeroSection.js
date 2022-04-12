@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import styles from './HeroSection.module.css'
-import brandTheme from '../../BrandThemes.css'
+import brandTheme from '../../assets/styles/BrandThemes.css'
 import Slider from 'react-slick'
 
 const HeroSection = (props) => {

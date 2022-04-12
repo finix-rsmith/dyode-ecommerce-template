@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './NavBar.module.css'
 import BrandLogo from '../BrandLogo/BrandLogo.js'
 import NavLinks from '../NavLinks/NavLinks.js'
-import { mainNav, Icons, navUtilities } from '../../SiteMap.js'
+import { mainNav, Icons, navUtilities } from '../../assets/SiteMap.js'
 
 const NavBar = (props) => (
   <div className={styles.NavBar}>

@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './ProductSlider.module.css'
 import ProductCard from '../ProductCard/ProductCard.js'
 import Slider from 'react-slick'
-import arrow_icon from '../../images/arrow-icon.svg'
+import arrow_icon from '../../assets/images/arrow-icon.svg'
 
 const arrowStyles = {
   width: '24px',

@@ -9,8 +9,8 @@ import ProductCategories from './components/ProductCategories/ProductCategories.
 import ProductSlider from './components/ProductSlider/ProductSlider.js'
 import SignUp from './components/SignUp/SignUp.js'
 import FooterMenu from './components/FooterMenu/FooterMenu.js'
-import { brandLogo, promoMessage, heroSlides, heroStatic, storeCategories, storeProducts, signUpContent } from './SiteContent.js'
-import { customerServiceNav, companyNav, socialNav } from './SiteMap.js'
+import { brandLogo, promoMessage, heroSlides, heroStatic, storeCategories, storeProducts, signUpContent } from './assets/SiteContent.js'
+import { customerServiceNav, companyNav, socialNav } from './assets/SiteMap.js'
 
 const App = () => {
   return (
