@@ -14,8 +14,7 @@ const heroSlides = [
 		textBox: {
 			top: 'calc(50% - 108px)',
 			left: '133px'
-		},
-		index: 0
+		}
 	},
 	{
 		title: 'Our Fave Tees',
@@ -25,8 +24,7 @@ const heroSlides = [
 		textBox: {
 			top: 'calc(50% - 108px)',
 			left: '133px'
-		},
-		index: 1
+		}
 	},
 	{
 		title: "Men's Tees",
@@ -36,8 +34,7 @@ const heroSlides = [
 		textBox: {
 			top: 'calc(50% - 108px)',
 			left: '133px'
-		},
-		index: 2
+		}
 	}
 ]
 
@@ -50,8 +47,7 @@ const heroStatic = [
 		textBox: {
 			top: '52px',
 			right: '54px'
-		},
-		index: 0
+		}
 	}
 ]
 
